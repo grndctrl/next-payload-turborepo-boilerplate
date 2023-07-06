@@ -1,0 +1,17 @@
+{
+  "$schema": "https://turbo.build/schema.json",
+  "globalDependencies": ["**/.env.*local"],
+  "globalEnv": ["PAYLOAD_SECRET", "MONGODB_URI", "PAYLOAD_PORT", "CMS_URL"],
+  "pipeline": {
+    "build": {
+      "dependsOn": ["^build"],
+      "outputs": [".next/**", "!.next/cache/**"]
+    },
+    "lint": {},
+    "clean": {},
+    "dev": {
+      "cache": false,
+      "persistent": true
+    }
+  }
+}

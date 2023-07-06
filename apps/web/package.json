@@ -1,0 +1,29 @@
+{
+  "name": "@grndctrl/web",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "clean": "rm -r node_modules",
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "next": "^13.4.1",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "@grndctrl/cms": "*"
+  },
+  "devDependencies": {
+    "@types/node": "^17.0.12",
+    "@types/react": "^18.0.22",
+    "@types/react-dom": "^18.0.7",
+    "autoprefixer": "^10.4.14",
+    "@grndctrl/eslint-config": "*",
+    "postcss": "^8.4.24",
+    "tailwindcss": "^3.3.2",
+    "@grndctrl/tsconfig": "*",
+    "typescript": "^5.1.6"
+  }
+}

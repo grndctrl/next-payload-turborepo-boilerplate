@@ -1,0 +1,25 @@
+{
+  "private": true,
+  "scripts": {
+    "clean": "turbo run clean && rm -r node_modules",
+    "build": "turbo run build",
+    "dev": "turbo run dev",
+    "lint": "turbo run lint",
+    "format": "NODE_ENV=production prettier --write \"{apps,packages}/**/*.{js,json,css,ts,tsx,md}\" ",
+    "serve": "docker compose up"
+  },
+  "devDependencies": {
+    "@turbo/gen": "^1.9.7",
+    "eslint": "^8.44.0",
+    "@grndctrl/eslint-config": "*",
+    "@grndctrl/prettier-config": "*",
+    "prettier": "^2.8.8",
+    "turbo": "^1.10.7"
+  },
+  "name": "@grndctrl/next-payload-turborepo-boilerplate",
+  "packageManager": "npm@8.11.0",
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ]
+}

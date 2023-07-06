@@ -1,0 +1,11 @@
+{
+  "name": "@grndctrl/prettier-config",
+  "version": "0.0.0",
+  "license": "MIT",
+  "publishConfig": {
+    "access": "public"
+  },
+  "dependencies": {
+    "prettier-plugin-organize-imports": "^3.2.2"
+  }
+}
